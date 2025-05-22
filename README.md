@@ -1,6 +1,6 @@
 # MCP Server Weather
  
-This project is a simple implementation of a server that provides weather information using the MCP (Message Communication Protocol).
+This project is a simple implementation of a server that provides weather information using the MCP (Model Context Protocol).
  
 ## Features
  
