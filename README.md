@@ -1,38 +1,36 @@
 # MCP Server Weather
  
-This project is a simple implementation of a server that provides weather information using the MCP (Model Context Protocol).
+Este projeto é uma implementação simples de um servidor que fornece informações meteorológicas usando o MCP (Model Context Protocol).
  
 ## Features
  
-- Provides weather data for different locations.
-- Implements the MCP protocol for communication.
-- Lightweight and easy to set up.
+- Fornece dados meteorológicos para diferentes localidades.
+- Implementa o protocolo MCP para comunicação.
+- Leve e fácil de configurar
  
-## Prerequisites
+## Pré-requisitos
  
-- [Python](https://www.python.org/) installed on your system.
-- Basic knowledge of MCP protocol.
+- [Python](https://www.python.org/) instalado no sistema.
+- Conhecimento básico do protocolo MCP.
  
-## Usage - Server
+## Uso - Servidor
  
-1. Start the server:
+1. Inicie o servidor:
     ```bash
     python server.py
     ```
-2. The server will run on `http://localhost:8001` by default.
+2. O servidor vai rodar em `http://localhost:8001` por padrão.
  
-3. Use an MCP client to connect and request weather data.
+3. Use o cliente MCP para conectar rodar a consulta a dados climáticos.
  
-4. Start the client interface:
+4. Inicie a interface com o cliente:
     ```bash
     streamlit run client.py
     ```
-5. Access the interface in your browser at `http://localhost:8501`.
+5. Acesse a interface no navegador em `http://localhost:8501`.
  
-## Contributing
+Constribuições são bem-vindas! 
  
-Contributions are welcome! Please fork the repository and submit a pull request.
+## Licensa
  
-## License
- 
-This project is licensed under the [MIT License](LICENSE).
+Este projeto está licensiado sob a [Licensa MIT](LICENSE).
