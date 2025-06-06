@@ -10,7 +10,7 @@ estacoes = ["Guaratiba", "Flamengo", "Vila Valqueire", "Urca", "Rocha Miranda"]
 def main():
     st.title("Está chovendo no Rio?")
     st.write("Faça uma pergunta para checar os dados climáticos no Rio de Janeiro usando servidor MCP.")
-    st.write(f"Estações disponíveis: {estacoes}")
+    st.write(f"Exemplos de stações disponíveis: {estacoes}")
  
     server_url = st.text_input("MCP Server URL", "http://localhost:8001/sse")
     question = st.text_input("Pergunta", "Está chovendo em Guaratiba?")
@@ -36,10 +36,10 @@ def neighborhood_for_rain_check(question: str) -> str:
     prompt = "Cheque se esta pergunta está fazendo uma pergunta relacionada a chuva " \
     "ou meteorologia. Se não, responda com a palavra unrelated, e nada mais. " \
     "Se estiver, responda com o nome da localidade questionada. Siga os exemplos:" \
-    "<Example output 1> Guaratiba" \
-    "<Example output 1> Flamengo" \
-    "<Example output 1> Vila Valqueire" \
-    "<Example output 1> unrelated"
+    "<Exemplo saída 1> Guaratiba" \
+    "<Exemplo saída 1> Flamengo" \
+    "<Exemplo saída 1> Vila Valqueire" \
+    "<Exemplo saída 1> unrelated"
     answer = invoke_llm([prompt, question])
     return answer.lower()
  
