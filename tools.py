@@ -5,13 +5,8 @@ from mcp.types import ErrorData, INTERNAL_ERROR, INVALID_PARAMS
  
 def get_rain_15min_from_location(location: str) -> float:
     url = 'https://api.dados.rio/v2/clima_pluviometro/precipitacao_15min/'
-    headers = {
-        'accept': 'application/json',
-        'X-CSRFToken': 'ibFOs7hegrzFacvltgYQvkU5h82K7gnpmzu6v3ncqttIcYsdPCmBCcIYrpvVYRXG'
-    }
- 
     try:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url)
  
         if response.status_code != 200:
             raise Exception(f"Erro ao acessar a API: {response.status_code} - {response.text}")
